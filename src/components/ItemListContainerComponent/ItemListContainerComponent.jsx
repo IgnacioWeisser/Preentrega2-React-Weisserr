@@ -1,10 +1,9 @@
 import React from 'react';
+import { useProducts } from '../hooks/useProducts';
 
-const ItemListContainerComponent = ({ greeting }) => {
+const ItemListContainerComponent = ({ products }) => {
     return (
-        <div className="greeting-container">
-            {greeting}
-        </div>
+        <div className="itemListContainer"></div>
     );
 };
 

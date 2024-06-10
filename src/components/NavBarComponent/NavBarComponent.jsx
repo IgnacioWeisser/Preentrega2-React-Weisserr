@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,11 +12,11 @@ const NavBarComponent = () => {
     return (
         <Navbar expand="lg" className="navbar">
             <Container>
-                <Navbar.Brand href="#home">Weisser Pc Store</Navbar.Brand>
+                <Navbar.Brand><Link to="/">Weisser Pc Store</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Inicio</Nav.Link>
+                        <Nav.Link><Link to="/">Inicio</Link></Nav.Link>
                         <Nav.Link href="#link">Tienda</Nav.Link>
                         <Nav.Link href="#link">Desktop</Nav.Link>
                         <Nav.Link href="#link">Notebooks</Nav.Link>
